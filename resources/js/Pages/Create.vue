@@ -1,0 +1,71 @@
+<template lang="">
+   <Head title="Create User"/>
+    <h1 class="text-3xl">Create New User</h1>
+    <form @submit.perevent="submit" method="Post" action="/" class="max-w-md mx-auto mt-8" >
+
+    <div class="mb-6">
+      <label class="block mb-2 uppercase fon-bold text-xs text-gray-700"
+      for="name">
+        Name
+        </label>
+
+        <input v-model="form.name" class="border border-gray-400 p-2 w-full"
+        type="text"
+        name="name"
+        id="name"
+        required>
+        </div>
+
+        <div class="mb-6">
+      <label class="block mb-2 uppercase fon-bold text-xs text-gray-700"
+      for="email">
+        email
+        </label>
+
+        <input  v-model="form.email" class="border border-gray-400 p-2 w-full"
+        type="text"
+        name="email"
+        id="email"
+        required>
+        </div>
+
+        <div class="mb-6">
+      <label class="block mb-2 uppercase fon-bold text-xs text-gray-700"
+      for="password">
+        password
+        </label>
+
+        <input  v-model="form.password" class="border border-gray-400 p-2 w-full"
+        type="password"
+        name="password"
+        id="password"
+        required>
+        </div>
+
+        <div class="mb-6">
+            <button type="submit"
+            class="bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500">
+
+            Submit
+        </button>
+        </div>
+
+
+    </form>
+
+</template>
+<script setup>
+import { Inertia } from "@inertiajs/inertia";
+import {reactive}  from "vue";
+
+let form = reactive({
+    name: '',
+    email: '',
+    password: '',
+
+});
+
+let submit = () =>{
+    Inertia.post('/userscreate', form)
+};
+</script>
