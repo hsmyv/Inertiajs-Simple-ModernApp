@@ -19597,7 +19597,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_NavLink = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("NavLink");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("nav", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavLink, {
     href: "/",
-    ative: _ctx.$page.component == 'home'
+    ative: _ctx.$page.component == 'Home'
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_2];
@@ -19605,7 +19605,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1 /* STABLE */
   }, 8 /* PROPS */, ["ative"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavLink, {
     href: "/users",
-    ative: _ctx.$page.component == 'users'
+    ative: _ctx.$page.component == 'Users'
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_3];
@@ -19613,7 +19613,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1 /* STABLE */
   }, 8 /* PROPS */, ["ative"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NavLink, {
     href: "/settings",
-    ative: _ctx.$page.component == 'settings'
+    ative: _ctx.$page.component == 'Settings'
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_4];
@@ -26861,6 +26861,14 @@ var map = {
 		"./resources/js/Pages/Create.vue",
 		"resources_js_Pages_Create_vue"
 	],
+	"./Home": [
+		"./resources/js/Pages/Home.vue",
+		"resources_js_Pages_Home_vue"
+	],
+	"./Home.vue": [
+		"./resources/js/Pages/Home.vue",
+		"resources_js_Pages_Home_vue"
+	],
 	"./Index": [
 		"./resources/js/Pages/Index.vue",
 		"resources_js_Pages_Index_vue"
@@ -26869,21 +26877,13 @@ var map = {
 		"./resources/js/Pages/Index.vue",
 		"resources_js_Pages_Index_vue"
 	],
-	"./home": [
-		"./resources/js/Pages/home.vue",
-		"resources_js_Pages_home_vue"
+	"./Settings": [
+		"./resources/js/Pages/Settings.vue",
+		"resources_js_Pages_Settings_vue"
 	],
-	"./home.vue": [
-		"./resources/js/Pages/home.vue",
-		"resources_js_Pages_home_vue"
-	],
-	"./settings": [
-		"./resources/js/Pages/settings.vue",
-		"resources_js_Pages_settings_vue"
-	],
-	"./settings.vue": [
-		"./resources/js/Pages/settings.vue",
-		"resources_js_Pages_settings_vue"
+	"./Settings.vue": [
+		"./resources/js/Pages/Settings.vue",
+		"resources_js_Pages_Settings_vue"
 	]
 };
 function webpackAsyncContext(req) {
@@ -27034,7 +27034,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Create_vue":1,"resources_js_Pages_Index_vue":1,"resources_js_Pages_home_vue":1,"resources_js_Pages_settings_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Create_vue":1,"resources_js_Pages_Home_vue":1,"resources_js_Pages_Index_vue":1,"resources_js_Pages_Settings_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

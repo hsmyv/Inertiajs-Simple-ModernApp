@@ -2,18 +2,18 @@
      <nav>
         <ul class="flex space-x-6">
             <li>
-                <NavLink href="/" :ative="$page.component == 'home'">
+                <NavLink href="/" :ative="$page.component == 'Home'">
                 Home
             </NavLink>
         </li>
             <li>
-                <NavLink href="/users" :ative="$page.component == 'users'">
+                <NavLink href="/users" :ative="$page.component == 'Users'">
                 Users
             </NavLink>
         </li>
 
             <li>
-                <NavLink href="/settings" :ative="$page.component == 'settings'">
+                <NavLink href="/settings" :ative="$page.component == 'Settings'">
                 Settings
             </NavLink>
         </li>

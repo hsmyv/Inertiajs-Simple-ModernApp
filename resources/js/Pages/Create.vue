@@ -1,7 +1,7 @@
 <template lang="">
    <Head title="Create User"/>
     <h1 class="text-3xl">Create New User</h1>
-    <form @submit.perevent="submit" method="Post" action="/" class="max-w-md mx-auto mt-8" >
+    <form @submit.prevent="submit" method="Post" action="/" class="max-w-md mx-auto mt-8" >
 
     <div class="mb-6">
       <label class="block mb-2 uppercase fon-bold text-xs text-gray-700"
